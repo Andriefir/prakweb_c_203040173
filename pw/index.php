@@ -5,7 +5,7 @@
     Pertemuan 2
 */
 ?>
-
+	
 <?php  
 require 'functions.php';
 
@@ -15,15 +15,13 @@ $buku = query("SELECT * FROM buku");
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Daftar Buku</title>
+	<title>Daftar Buku Novel</title>
 </head>
 
 <body class ="center" >
-	<div class="container" style = "margin : "auto"
->
 	<h3 >Daftar Buku</h3>
 
-	<table border="1" cellpadding="10" cellspacing="0s">
+	<table border="1" cellpadding="10" cellspacing="0s" style margin = " auto;">
 		<tr>
 			<th>ID</th>
 			<th>Judul buku</th>
@@ -51,6 +49,5 @@ $buku = query("SELECT * FROM buku");
 		</tr>
 		<?php endforeach; ?>
 	</table>
-	</div>
 </body>
 </html>
