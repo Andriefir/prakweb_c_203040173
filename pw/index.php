@@ -20,10 +20,14 @@ $buku = query("SELECT * FROM buku");
 </head>
 
 <body class ="center">
-	<div></div>
+	<div class="container" width="80%">
 	<h3>
 		<center>DAFTAR BUKU</center>
 	</h3>
+	<button style="text-align: center;">
+	<a href="tambah.php">Tambah Data</a>
+	</button>
+  	<br><br>
 
 	<table border="1" cellpadding="10" cellspacing="0s" style="margin: 0 auto;">
 		<tr>
@@ -60,5 +64,6 @@ $buku = query("SELECT * FROM buku");
 		</tr>
 		<?php endforeach; ?>
 	</table>
+	</div>
 </body>
 </html>
