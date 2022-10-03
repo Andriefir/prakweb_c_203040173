@@ -20,11 +20,11 @@ $buku = query("SELECT * FROM buku");
 </head>
 
 <body class ="center">
-	<div class="container" width="80%">
+	<div class="container" >
 	<h3>
 		<center>DAFTAR BUKU</center>
 	</h3>
-	<button style="text-align: center;">
+	<button class="tambah">
 	<a href="tambah.php">Tambah Data</a>
 	</button>
   	<br><br>
@@ -58,7 +58,12 @@ $buku = query("SELECT * FROM buku");
 		<tr>
 			<td colspan= "5">
 				<center>
-			 		<a href="hapus.php?id=<?= $bk['ID']; ?>">Hapus</a>
+					<button>
+			 			<a href="Ubah.php?id=<?= $bk['ID']; ?>">Ubah</a> 
+					</button>
+					<button>
+						<a href="hapus.php?id=<?= $mhs['id']; ?>" onclick= "return confirm('apakah anda yakin?');">Hapus</a></li>
+					</button>
 			 	</center>
 			</td>
 		</tr>
