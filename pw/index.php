@@ -20,7 +20,10 @@ $buku = query("SELECT * FROM buku");
 </head>
 
 <body class ="center">
-	<h3>Daftar Buku</h3>
+	<div></div>
+	<h3>
+		<center>DAFTAR BUKU</center>
+	</h3>
 
 	<table border="1" cellpadding="10" cellspacing="0s" style="margin: 0 auto;">
 		<tr>
@@ -47,6 +50,13 @@ $buku = query("SELECT * FROM buku");
             <td><?= $bk['Penulis']; ?></td>
             <td><?= $bk['Penerbit']; ?></td>
 			<td><img src="assets/<?= $bk['Gambar']; ?>" width = "80"></td>
+		</tr>
+		<tr>
+			<td colspan= "5">
+				<center>
+			 		<a href="hapus.php?id=<?= $bk['ID']; ?>">Hapus</a>
+			 	</center>
+			</td>
 		</tr>
 		<?php endforeach; ?>
 	</table>
