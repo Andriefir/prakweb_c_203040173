@@ -4,24 +4,25 @@
     203040173
     Pertemuan 2
 */
-?>
-	
+?> 
 <?php  
 require 'functions.php';
 
 // query isi tabel
 $buku = query("SELECT * FROM buku");
+
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Daftar Buku Novel</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
-<body class ="center" >
-	<h3 >Daftar Buku</h3>
+<body class ="center">
+	<h3>Daftar Buku</h3>
 
-	<table border="1" cellpadding="10" cellspacing="0s" style margin = " auto;">
+	<table border="1" cellpadding="10" cellspacing="0s" style="margin: 0 auto;">
 		<tr>
 			<th>ID</th>
 			<th>Judul buku</th>
@@ -34,7 +35,7 @@ $buku = query("SELECT * FROM buku");
 		<tr>
 			<td colspan="4">
 				<p style="color: red; font-style: italic;">data mahasiswa tidak ditemukan!</p>
-			</td>
+			</td>	
 		</tr>
 		<?php endif; ?>
 
